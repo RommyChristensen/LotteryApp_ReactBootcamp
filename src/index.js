@@ -8,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Lottery</h1>
+        <h1>Welcome, User</h1>
         <Lottery />
         <Lottery maxNum={10} numBalls={4} name="Daily Lotto" />
       </div>
