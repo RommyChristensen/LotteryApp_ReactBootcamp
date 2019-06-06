@@ -11,6 +11,7 @@ class App extends React.Component {
         <h1>Welcome, User</h1>
         <Lottery />
         <Lottery maxNum={10} numBalls={4} name="Daily Lotto" />
+        <Lottery maxNum={99} name="tes lotto 3" />
       </div>
     );
   }

@@ -14,12 +14,8 @@ class Lottery extends React.Component {
     super(props);
 
     this.state = {
-      balls: []
+      balls: Array.from({ length: this.props.numBalls })
     };
-
-    for (let i = 0; i < this.props.numBalls; i++) {
-      this.state.balls.push(Math.floor(Math.random() * this.props.maxNum) + 1);
-    }
 
     this.generateBalls = this.generateBalls.bind(this);
   }
